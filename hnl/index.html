@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6220278-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6220278-3');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Human Nature Lab Website Redesign | Kristi-Lynn Jacovino Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="/">Kristi-Lynn Jacovino</a></h1>
+      <div id="nav"></div>
+    </header>
+    <section class="content">
+      <h2>Human Nature Lab Website Redesign</h2>
+      <article>
+        <div class="title">
+          <h3>Overview</h3>
+        </div>
+        <div class="article">
+          <p>The <a href="http://humannaturelab.net">Human Nature Lab</a> at Yale University is a well-known lab doing research on social systems, AI, social media, etc. Their work is wide-ranging and their website wasn’t presenting the findings very well. It was poorly organized, felt dated, and did a disservice to the importance of their work.
+
+          <p>There was also a separate website for the head of the lab which contained a lot of duplicate content from the main lab site. This is problematic because when Google indexes the sites, duplicates tend to be ‘downgraded’ so to speak. They can lose ranking because the AI may interpret them as spam.</p>
+
+          <p>Finally, we wanted to implement a way to organize the data in the website for more efficiency of management. The main inefficiency was relating research publications, researchers, and areas of research to one another. The old way required entering the same information into multiple sections of the website which leaves a lot of room for error and makes updating that information a long and complex process.</p>
+        </div>
+      </article>
+
+      <article>
+        <div class="title">
+          <h3>Relational Model &amp; Taxonomies</h3>
+        </div>
+        <div class="article">
+          <p>To create these dynamic relationships, we need to have three pieces of content in place—the researcher, the publication, and the area of study. Each of these pieces of content exists independently of each other. For instance, I can view an individual researcher’s bio page, read an individual publication, and read about the area of study. Additionally, when they publish a new article, they can dynamically add which researchers worked on the publication, pulling from the existing researchers listed on the website.</p>
+
+          <p>Now that the researcher is connected to the article, that article can be dynamically pulled into that researcher’s individual bio page since they are related. Similarly, when they add a publication or a researcher, they can select which area of study that item belongs to, and those will both dynamically pull into the description page for that area of study.</p>
+
+          <p><img src="https://kristi-lynn.org/web/images/case-study/HNL_relationships.svg" alt="Relational model"></p>
+      </article>
+      <article>
+        <div class="title">
+          <h3>Relational Model / CMS Entries</h3>
+        </div>
+        <div class="article">
+          <p>When creating a researcher data point in the CMS, the editor can choose from existing Research Areas (Categories) and can optionally choose 'Selected Publications' if the researcher would like to feature specific research on their bio page rather than the default three most recent publications of theirs.</p>
+
+          <p><img src="images/HNL_CMS_relationalmodel.svg" alt="CMS inputs for researchers and publications"></p>
+        </div>
+      </article>
+      <article>
+          <div class="title">
+            <h3>Information Architecture</h3>
+          </div>
+          <div class="article">
+          <p>We also needed to combine two sites into one and reorganize the new site to clarify what was the priority of the content. We used Google Analytics to track which content was the highest priority, and we needed to keep most of the content online for reference purposes.</p>
+
+          <p>After analyzing the Google Analytics for both sites, we created full sitemaps of both the primary lab site and the head of the lab’s site and reorganized both into a single sitemap for the new site that would prioritize the most commonly viewed and searched-for content, and ultimately narrowed the sitemap down to four primary navigation links, giving a top level overview of the lab’s primary focuses while still keeping all of the priority content highly accessible.</p>
+
+          <p><img src="https://kristi-lynn.org/web/images/case-study/HNL_sitemap.png" alt="Complete site map for HNL website"></p>
+
+          <p>We also decided to use longer, single scroll pages for each of the four primary sections to provide all of the context for that section in one location. It also generally helped with the flow of the content. This map demonstrates the proposed page flow and relationship between pieces of content.</p>
+
+          <p><img src="https://kristi-lynn.org/web/images/case-study/HNL_Flowmap.png" alt="Flowchart of pages"></p>
+
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>Development</h3>
+        </div>
+        <div class="article">
+          <p>Both of the websites were built with WordPress, which is a great option for some websites, but for this one it wasn’t able to efficiently do the job of creating relationships between the researchers, the publications, and the areas of study. We needed to use something they would be able to update and manage easily and would be foolproof for adding new content since it is mostly handled by busy grad students.
+
+          <p>I recommended a different content management system called Craft CMS, which has a great engine for creating dynamic relationships built in and has an easy-to-use interface for updating and adding new content. Ultimately, updating the website should be a nice break from research, not a dreaded task bestowed on the lowliest in the lab.</p>
+
+          <p>The graphic designer for this project also wanted a highly custom design that would emanate the prestige of the lab. This meant a lot of custom design work, background videos, and other design elements that would be difficult to implement within the framework of WordPress. Craft gave us the freedom to build something completely custom from the ground up.</p>
+
+          <p><img src="https://kristi-lynn.org/web/images/case-study/HNL_wpToCraft.svg" alt="WordPress to Craft CMS"></p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>Final Site</h3>
+        </div>
+        <div class="article">
+          <p><img src="https://kristi-lynn.org/web/images/case-study/HNL_devices.jpg" alt="HNL Device Overview"></p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>Homepage Sample</h3>
+        </div>
+        <div class="article">
+          <p><img src="https://kristi-lynn.org/web/images/case-study/HNL_home.jpg" alt="HNL Homepage"></p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>People Landing Page</h3>
+        </div>
+        <div class="article">
+          <p><img src="https://kristi-lynn.org/web/images/case-study/HNL_people.jpg" alt="People Landing Page"></p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>Visit Site</h3>
+        </div>
+        <div class="article">
+          <p><a href="http://humannaturelab.net">Human Nature Lab at Yale University &rarr;</a></p>
+        </div>
+      </article>
+    </section>
+    <footer>
+	    <ul>
+	    <li><span>Website</span> // <a href="http://kristi-lynn.org">kristi-lynn.org</a></li>
+        <li><span>Email</span> // hello@kristi-lynn.org</li>
+        <li><span>Phone</span> // (858) 480-1514</li>
+      </ul>
+    </footer>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

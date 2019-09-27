@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6220278-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6220278-3');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Onion, Inc: ClickVenture CMS | Kristi-Lynn Jacovino Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="/">Kristi-Lynn Jacovino</a></h1>
+      <div id="nav"></div>
+    </header>
+    <section class="content">
+      <h2>ClickVenture CMS</h2>
+      <article>
+        <div class="title">
+          <h3>What is it?</h3>
+        </div>
+        <div class="article">
+          <p>ClickVenture was a ClickHole feature that basically works like a choose-your-own-adventure book. You would be given a prompt and then you’d choose what you wanted to do next (e.g. turn to page 112 to walk through the door). This feature was originally proposed by the product team to the ClickHole editorial staff, an unusual direction in many places, but at The Onion not entirely unheard of since we all knew each other and had a real appreciation for what each did.</p>
+
+          <p>Version 1 of this feature was built out in Bulbs (The Onion’s custom CMS), and ClickHole’s writers went balls to the wall and within about ten posts had pushed the system to the limit. We went from this idea of having maybe 10-20 ‘slides’ for each article to well over 200. One even featured an entirely made up Shakespearean play.</p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>The Problem</h3>
+        </div>
+        <div class="article">
+          <p>The stories had become so complex and the system was still so rudimentary that their process for creating and entering the content into the system was convoluted at best. I did a considerable amount of interviewing and research into the editorial staff’s process to come up with a better system for them to create the ClickVentures.</p>
+
+          <p>I discovered that, for instance, adding images required the writer to send their ideas to the art department, who would then pull images to get them approved by the writers, who would then pass them back to the art department to do any of the manipulations they needed and send them back to the writers for approval, and ultimately the writer would upload them to the slides (all 200+ of them). All of this was previously being managed through shared Google Sheets and Dropbox folders of images with corresponding file names. The copyeditor was living in a different (but ultimately equally fresh) hell trying to make sure that if ‘Horse’ was capitalized on one slide that it was capitalized on every slide, no find and replace in sight.</p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>The Solution</h3>
+        </div>
+        <div class="article">
+          <p>Ultimately, we decided to redesign from the ground up, maintaining some of the layout (slides on the left, content on the right, though we changed the tool to a fixed height with two independently scrolling panels so users didn't have to keep scrolling from the bottom of the page to the top to edit the content), and re-examining the process the writers, editors, and art department were using to create these massive undertakings.</p>
+
+	      <p>In order to integrate the entire writing/editing/photo creation process into the system, I designed different views for the Settings, Copy, and Photos, and determined a series of statuses that could be set on each slide throughout the process. The user could then choose what their Default View would be, and would be able to filter the entire slide list by any of the statuses. This way, at a glance, the user could see what needed to be done for each slide, and, say, only view the slides that need a photo edit, or a copy edit, or that are all set and ready to be published.</p>
+
+          <p>Another issue we tackled with this redesign was re-ordering the slides. Originally, they had to be moved up and down manually, which is fine for swapping places of slides, but time consuming if you realized you needed to move it down by 40 slides. I implemented a numbering system so the user could change the number of the slide and it would automatically move to that position in the slide order, while pushing the slide in that position to the next position.</p>
+
+          <p>For the copy editors, we added a search function to the slides so they could search for any word or phrase and it would filter to only include slides matching the search. For the photo editors, we streamlined the process so the writers could include a link to the stock photo and enter a note to the art department. The art department could then pull the image, get started right away, and upload it for approval&mdash;all within the CMS.</p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>Settings View</h3>
+        </div>
+        <div class="article">
+          <p><img src="images/clickventure1.png" alt="ClickVenture Wireframes - Settings View"></p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>Copy Editing View</h3>
+        </div>
+        <div class="article">
+          <p><img src="images/clickventure2.png" alt="ClickVenture Wireframes - Copy Editing View"></p>
+        </div>
+      </article>
+      <article>
+        <div class="title">
+          <h3>Photo Editing View</h3>
+        </div>
+        <div class="article">
+          <p><img src="images/clickventure3.png" alt="ClickVenture Wireframes - Photo Editing View"></p>
+        </div>
+      </article>
+    </section>
+    <footer>
+	    <ul>
+	    <li><span>Website</span> // <a href="http://kristi-lynn.org">kristi-lynn.org</a></li>
+        <li><span>Email</span> // hello@kristi-lynn.org</li>
+        <li><span>Phone</span> // (858) 480-1514</li>
+      </ul>
+    </footer>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
